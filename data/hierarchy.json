@@ -1,0 +1,2173 @@
+{
+  "schemaVersion": 1,
+  "id": "boat-skills",
+  "name": "Boat Skills",
+  "version": "1.0.0",
+  "rootId": "root",
+  "scale": [
+    {
+      "value": 0,
+      "label": "Not Demonstrated"
+    },
+    {
+      "value": 2,
+      "label": "Beginner"
+    },
+    {
+      "value": 4,
+      "label": "Developing"
+    },
+    {
+      "value": 6,
+      "label": "Competent"
+    },
+    {
+      "value": 8,
+      "label": "Proficient"
+    },
+    {
+      "value": 10,
+      "label": "Expert"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "root",
+      "type": "root",
+      "name": "Boat Skills",
+      "description": "Sailing racing competency assessment covering boat handling, starting, upwind and downwind performance, mark roundings and racing strategy.",
+      "children": [
+        "boat-handling",
+        "starting",
+        "upwind-performance",
+        "downwind-performance",
+        "mark-roundings",
+        "racing-strategy"
+      ]
+    },
+    {
+      "id": "boat-handling",
+      "type": "competency",
+      "name": "Boat Handling",
+      "description": "Controlling the boat smoothly and efficiently through manoeuvres, trim and changing conditions.",
+      "weight": 1,
+      "children": [
+        "boat-handling.tacking",
+        "boat-handling.gybing",
+        "boat-handling.sail-trim-fundamentals",
+        "boat-handling.steering-balance",
+        "boat-handling.speed-control",
+        "boat-handling.heavy-air-technique",
+        "boat-handling.light-air-technique",
+        "boat-handling.communication-coordination"
+      ]
+    },
+    {
+      "id": "boat-handling.tacking",
+      "type": "competency",
+      "name": "Tacking",
+      "description": "Turning the bow through the wind with minimal loss of distance and speed.",
+      "weight": 1,
+      "children": [
+        "boat-handling.tacking.entry-timing",
+        "boat-handling.tacking.rudder-control",
+        "boat-handling.tacking.exit-speed-build",
+        "boat-handling.tacking.weight-transition"
+      ]
+    },
+    {
+      "id": "boat-handling.tacking.entry-timing",
+      "type": "metric",
+      "name": "Entry Timing",
+      "description": "Starts the tack at the right moment relative to waves, pressure and nearby boats.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.tacking.rudder-control",
+      "type": "metric",
+      "name": "Rudder Control",
+      "description": "Uses a progressive, appropriate rudder angle through the turn without stalling the blade.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.tacking.exit-speed-build",
+      "type": "metric",
+      "name": "Exit Speed Build",
+      "description": "Exits on a slightly freed angle and rebuilds target speed before pointing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.tacking.weight-transition",
+      "type": "metric",
+      "name": "Weight Transition",
+      "description": "Moves body weight smoothly and on time to roll and then flatten the boat.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.gybing",
+      "type": "competency",
+      "name": "Gybing",
+      "description": "Turning the stern through the wind with control in all wind strengths.",
+      "weight": 1,
+      "children": [
+        "boat-handling.gybing.entry-setup",
+        "boat-handling.gybing.mainsail-transfer",
+        "boat-handling.gybing.exit-heading",
+        "boat-handling.gybing.heavy-air-gybes"
+      ]
+    },
+    {
+      "id": "boat-handling.gybing.entry-setup",
+      "type": "metric",
+      "name": "Entry Setup",
+      "description": "Prepares controls, body position and heading before committing to the gybe.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.gybing.mainsail-transfer",
+      "type": "metric",
+      "name": "Mainsail Transfer",
+      "description": "Controls the mainsail across the boat without slamming or losing control.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.gybing.exit-heading",
+      "type": "metric",
+      "name": "Exit Heading",
+      "description": "Finishes the gybe on the intended course without over-rotating or rounding up.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.gybing.heavy-air-gybes",
+      "type": "metric",
+      "name": "Heavy Air Gybes",
+      "description": "Completes gybes in strong winds by timing them at maximum boat speed.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.sail-trim-fundamentals",
+      "type": "competency",
+      "name": "Sail Trim Fundamentals",
+      "description": "Setting and adjusting sails for flow, power and balance.",
+      "weight": 1,
+      "children": [
+        "boat-handling.sail-trim-fundamentals.telltale-reading",
+        "boat-handling.sail-trim-fundamentals.sheet-tension",
+        "boat-handling.sail-trim-fundamentals.twist-control",
+        "boat-handling.sail-trim-fundamentals.power-adjustment"
+      ]
+    },
+    {
+      "id": "boat-handling.sail-trim-fundamentals.telltale-reading",
+      "type": "metric",
+      "name": "Telltale Reading",
+      "description": "Interprets telltales and leech ribbons to identify stalled or luffing flow.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.sail-trim-fundamentals.sheet-tension",
+      "type": "metric",
+      "name": "Sheet Tension",
+      "description": "Sets sheet tension appropriate to wind strength, sea state and point of sail.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.sail-trim-fundamentals.twist-control",
+      "type": "metric",
+      "name": "Twist Control",
+      "description": "Adjusts leech twist to match wind gradient and power requirements.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.sail-trim-fundamentals.power-adjustment",
+      "type": "metric",
+      "name": "Power Adjustment",
+      "description": "Changes sail depth and power with the available controls as conditions change.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.steering-balance",
+      "type": "competency",
+      "name": "Steering & Balance",
+      "description": "Driving the boat with feel, minimal rudder and correct heel.",
+      "weight": 1,
+      "children": [
+        "boat-handling.steering-balance.helm-feel",
+        "boat-handling.steering-balance.minimal-rudder-use",
+        "boat-handling.steering-balance.heel-angle-control",
+        "boat-handling.steering-balance.fore-and-aft-trim"
+      ]
+    },
+    {
+      "id": "boat-handling.steering-balance.helm-feel",
+      "type": "metric",
+      "name": "Helm Feel",
+      "description": "Recognises and responds to changes in helm load and weather helm.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.steering-balance.minimal-rudder-use",
+      "type": "metric",
+      "name": "Minimal Rudder Use",
+      "description": "Steers with small, smooth rudder movements to reduce drag.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.steering-balance.heel-angle-control",
+      "type": "metric",
+      "name": "Heel Angle Control",
+      "description": "Maintains the optimum heel angle for the boat and conditions.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.steering-balance.fore-and-aft-trim",
+      "type": "metric",
+      "name": "Fore-and-Aft Trim",
+      "description": "Positions weight longitudinally to optimise waterline length and wave handling.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.speed-control",
+      "type": "competency",
+      "name": "Speed Control",
+      "description": "Accelerating, slowing and holding position deliberately.",
+      "weight": 1,
+      "children": [
+        "boat-handling.speed-control.acceleration",
+        "boat-handling.speed-control.controlled-deceleration",
+        "boat-handling.speed-control.holding-position",
+        "boat-handling.speed-control.low-speed-manoeuvring"
+      ]
+    },
+    {
+      "id": "boat-handling.speed-control.acceleration",
+      "type": "metric",
+      "name": "Acceleration",
+      "description": "Builds speed quickly from low speed by bearing away and trimming progressively.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.speed-control.controlled-deceleration",
+      "type": "metric",
+      "name": "Controlled Deceleration",
+      "description": "Slows the boat on demand without losing steerage.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.speed-control.holding-position",
+      "type": "metric",
+      "name": "Holding Position",
+      "description": "Keeps the boat nearly stationary while retaining the ability to manoeuvre.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.speed-control.low-speed-manoeuvring",
+      "type": "metric",
+      "name": "Low-Speed Manoeuvring",
+      "description": "Turns and repositions the boat confidently at very low speed.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.heavy-air-technique",
+      "type": "competency",
+      "name": "Heavy Air Technique",
+      "description": "Keeping the boat fast and under control in strong winds.",
+      "weight": 1,
+      "children": [
+        "boat-handling.heavy-air-technique.depowering",
+        "boat-handling.heavy-air-technique.gust-response",
+        "boat-handling.heavy-air-technique.wipeout-avoidance",
+        "boat-handling.heavy-air-technique.physical-endurance"
+      ]
+    },
+    {
+      "id": "boat-handling.heavy-air-technique.depowering",
+      "type": "metric",
+      "name": "Depowering",
+      "description": "Reduces power early and effectively using sail controls and trim.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.heavy-air-technique.gust-response",
+      "type": "metric",
+      "name": "Gust Response",
+      "description": "Responds to gusts by easing, steering or hiking before the boat heels excessively.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.heavy-air-technique.wipeout-avoidance",
+      "type": "metric",
+      "name": "Wipeout Avoidance",
+      "description": "Anticipates and prevents broaches, death rolls and capsizes.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.heavy-air-technique.physical-endurance",
+      "type": "metric",
+      "name": "Physical Endurance",
+      "description": "Sustains hiking, trimming and steering effort for the full race.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.light-air-technique",
+      "type": "competency",
+      "name": "Light Air Technique",
+      "description": "Maintaining flow and momentum in light and fluky winds.",
+      "weight": 1,
+      "children": [
+        "boat-handling.light-air-technique.smooth-movement",
+        "boat-handling.light-air-technique.weight-placement",
+        "boat-handling.light-air-technique.flow-maintenance",
+        "boat-handling.light-air-technique.patience-in-lulls"
+      ]
+    },
+    {
+      "id": "boat-handling.light-air-technique.smooth-movement",
+      "type": "metric",
+      "name": "Smooth Movement",
+      "description": "Moves around the boat gently to avoid disturbing sail flow.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.light-air-technique.weight-placement",
+      "type": "metric",
+      "name": "Weight Placement",
+      "description": "Uses leeward heel and forward weight to reduce wetted area and hold sail shape.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.light-air-technique.flow-maintenance",
+      "type": "metric",
+      "name": "Flow Maintenance",
+      "description": "Keeps sails eased and flow attached, avoiding over-trimming.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.light-air-technique.patience-in-lulls",
+      "type": "metric",
+      "name": "Patience in Lulls",
+      "description": "Holds course and trim through lulls rather than over-steering.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.communication-coordination",
+      "type": "competency",
+      "name": "Communication & Coordination",
+      "description": "Coordinating actions and sharing information on board.",
+      "weight": 1,
+      "children": [
+        "boat-handling.communication-coordination.call-clarity",
+        "boat-handling.communication-coordination.role-clarity",
+        "boat-handling.communication-coordination.manoeuvre-synchronisation",
+        "boat-handling.communication-coordination.information-flow"
+      ]
+    },
+    {
+      "id": "boat-handling.communication-coordination.call-clarity",
+      "type": "metric",
+      "name": "Call Clarity",
+      "description": "Uses concise, consistent calls for manoeuvres and tactical changes.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.communication-coordination.role-clarity",
+      "type": "metric",
+      "name": "Role Clarity",
+      "description": "Understands and performs individual responsibilities in each phase of the race.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.communication-coordination.manoeuvre-synchronisation",
+      "type": "metric",
+      "name": "Manoeuvre Synchronisation",
+      "description": "Times steering, trimming and weight movement together.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "boat-handling.communication-coordination.information-flow",
+      "type": "metric",
+      "name": "Information Flow",
+      "description": "Shares wind, traffic and speed information proactively and accurately.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting",
+      "type": "competency",
+      "name": "Starting",
+      "description": "Executing starts that deliver speed, clear air and a strategic position at the signal.",
+      "weight": 1,
+      "children": [
+        "starting.pre-start-preparation",
+        "starting.line-judgement",
+        "starting.timing",
+        "starting.positioning",
+        "starting.acceleration-launch",
+        "starting.start-strategy",
+        "starting.starting-rules"
+      ]
+    },
+    {
+      "id": "starting.pre-start-preparation",
+      "type": "competency",
+      "name": "Pre-Start Preparation",
+      "description": "Gathering information and planning before the warning signal.",
+      "weight": 1,
+      "children": [
+        "starting.pre-start-preparation.course-reconnaissance",
+        "starting.pre-start-preparation.wind-baseline",
+        "starting.pre-start-preparation.line-bias-assessment",
+        "starting.pre-start-preparation.transit-identification"
+      ]
+    },
+    {
+      "id": "starting.pre-start-preparation.course-reconnaissance",
+      "type": "metric",
+      "name": "Course Reconnaissance",
+      "description": "Sails part of the first leg to gather wind and current information.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.pre-start-preparation.wind-baseline",
+      "type": "metric",
+      "name": "Wind Baseline",
+      "description": "Records compass headings to establish the mean wind direction and shift range.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.pre-start-preparation.line-bias-assessment",
+      "type": "metric",
+      "name": "Line Bias Assessment",
+      "description": "Determines the favoured end of the starting line accurately.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.pre-start-preparation.transit-identification",
+      "type": "metric",
+      "name": "Transit Identification",
+      "description": "Identifies line transits on shore or beyond the line ends.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.line-judgement",
+      "type": "competency",
+      "name": "Line Judgement",
+      "description": "Knowing where the line is while sailing near it.",
+      "weight": 1,
+      "children": [
+        "starting.line-judgement.distance-to-line",
+        "starting.line-judgement.transit-use",
+        "starting.line-judgement.line-sag-awareness",
+        "starting.line-judgement.ocs-avoidance"
+      ]
+    },
+    {
+      "id": "starting.line-judgement.distance-to-line",
+      "type": "metric",
+      "name": "Distance to Line",
+      "description": "Estimates distance to the line in boat lengths during the final approach.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.line-judgement.transit-use",
+      "type": "metric",
+      "name": "Transit Use",
+      "description": "Uses transits to judge line position, especially mid-line.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.line-judgement.line-sag-awareness",
+      "type": "metric",
+      "name": "Line Sag Awareness",
+      "description": "Recognises when the fleet is sagging behind the line and exploits it.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.line-judgement.ocs-avoidance",
+      "type": "metric",
+      "name": "OCS Avoidance",
+      "description": "Starts consistently close to the line without being on the course side.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.timing",
+      "type": "competency",
+      "name": "Timing",
+      "description": "Managing time and distance to reach the line at speed on the signal.",
+      "weight": 1,
+      "children": [
+        "starting.timing.time-on-distance-runs",
+        "starting.timing.countdown-awareness",
+        "starting.timing.final-approach-adjustment",
+        "starting.timing.signal-sequence-knowledge"
+      ]
+    },
+    {
+      "id": "starting.timing.time-on-distance-runs",
+      "type": "metric",
+      "name": "Time-on-Distance Runs",
+      "description": "Measures how long it takes to reach the line from known positions.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.timing.countdown-awareness",
+      "type": "metric",
+      "name": "Countdown Awareness",
+      "description": "Maintains accurate awareness of time remaining throughout the sequence.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.timing.final-approach-adjustment",
+      "type": "metric",
+      "name": "Final Approach Adjustment",
+      "description": "Adjusts speed and course to hit the line at the signal.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.timing.signal-sequence-knowledge",
+      "type": "metric",
+      "name": "Signal Sequence Knowledge",
+      "description": "Knows the starting sequence and the meaning of each signal.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.positioning",
+      "type": "competency",
+      "name": "Positioning",
+      "description": "Securing and defending a spot on the line.",
+      "weight": 1,
+      "children": [
+        "starting.positioning.spot-selection",
+        "starting.positioning.gap-creation",
+        "starting.positioning.gap-defence",
+        "starting.positioning.approach-choice"
+      ]
+    },
+    {
+      "id": "starting.positioning.spot-selection",
+      "type": "metric",
+      "name": "Spot Selection",
+      "description": "Chooses a position that suits the plan and the fleet density.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.positioning.gap-creation",
+      "type": "metric",
+      "name": "Gap Creation",
+      "description": "Creates space to leeward to accelerate into.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.positioning.gap-defence",
+      "type": "metric",
+      "name": "Gap Defence",
+      "description": "Prevents competitors from taking the leeward gap.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.positioning.approach-choice",
+      "type": "metric",
+      "name": "Approach Choice",
+      "description": "Selects a port or starboard approach appropriate to the line and fleet.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.acceleration-launch",
+      "type": "competency",
+      "name": "Acceleration & Launch",
+      "description": "Hitting the line at full speed and emerging with clear air.",
+      "weight": 1,
+      "children": [
+        "starting.acceleration-launch.trigger-timing",
+        "starting.acceleration-launch.speed-at-signal",
+        "starting.acceleration-launch.height-after-launch",
+        "starting.acceleration-launch.first-minute-lane"
+      ]
+    },
+    {
+      "id": "starting.acceleration-launch.trigger-timing",
+      "type": "metric",
+      "name": "Trigger Timing",
+      "description": "Starts accelerating at the right moment to be at full speed on the signal.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.acceleration-launch.speed-at-signal",
+      "type": "metric",
+      "name": "Speed at Signal",
+      "description": "Crosses the line at or near target speed.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.acceleration-launch.height-after-launch",
+      "type": "metric",
+      "name": "Height After Launch",
+      "description": "Holds height off the line to protect the leeward gap.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.acceleration-launch.first-minute-lane",
+      "type": "metric",
+      "name": "First Minute Lane",
+      "description": "Keeps a clear lane in the first minute after the start.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.start-strategy",
+      "type": "competency",
+      "name": "Start Strategy",
+      "description": "Linking the start to the plan for the first beat.",
+      "weight": 1,
+      "children": [
+        "starting.start-strategy.end-versus-middle-decision",
+        "starting.start-strategy.strategic-side-alignment",
+        "starting.start-strategy.fleet-density-reading",
+        "starting.start-strategy.plan-adaptation"
+      ]
+    },
+    {
+      "id": "starting.start-strategy.end-versus-middle-decision",
+      "type": "metric",
+      "name": "End Versus Middle Decision",
+      "description": "Weighs favoured-end gains against risk and congestion.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.start-strategy.strategic-side-alignment",
+      "type": "metric",
+      "name": "Strategic Side Alignment",
+      "description": "Starts where it best serves the preferred side of the first beat.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.start-strategy.fleet-density-reading",
+      "type": "metric",
+      "name": "Fleet Density Reading",
+      "description": "Reads where the fleet is bunching and adjusts accordingly.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.start-strategy.plan-adaptation",
+      "type": "metric",
+      "name": "Plan Adaptation",
+      "description": "Adjusts the start plan in response to late shifts or crowding.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.starting-rules",
+      "type": "competency",
+      "name": "Starting Rules",
+      "description": "Applying the racing rules in the pre-start and at the start.",
+      "weight": 1,
+      "children": [
+        "starting.starting-rules.pre-start-right-of-way",
+        "starting.starting-rules.barging-awareness",
+        "starting.starting-rules.recall-procedures",
+        "starting.starting-rules.start-penalty-flags"
+      ]
+    },
+    {
+      "id": "starting.starting-rules.pre-start-right-of-way",
+      "type": "metric",
+      "name": "Pre-Start Right of Way",
+      "description": "Applies right-of-way rules correctly while manoeuvring before the start.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.starting-rules.barging-awareness",
+      "type": "metric",
+      "name": "Barging Awareness",
+      "description": "Understands that barging boats are not entitled to room at a starting mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.starting-rules.recall-procedures",
+      "type": "metric",
+      "name": "Recall Procedures",
+      "description": "Responds correctly to individual and general recalls.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "starting.starting-rules.start-penalty-flags",
+      "type": "metric",
+      "name": "Start Penalty Flags",
+      "description": "Knows the consequences of the I, Z, U and black flag rules.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance",
+      "type": "competency",
+      "name": "Upwind Performance",
+      "description": "Sailing to windward fast and high while making sound tactical and strategic decisions.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.upwind-speed",
+        "upwind-performance.pointing",
+        "upwind-performance.shift-recognition",
+        "upwind-performance.pressure-reading",
+        "upwind-performance.waves-sea-state",
+        "upwind-performance.lane-management",
+        "upwind-performance.laylines",
+        "upwind-performance.tactical-tacking"
+      ]
+    },
+    {
+      "id": "upwind-performance.upwind-speed",
+      "type": "competency",
+      "name": "Upwind Speed",
+      "description": "Achieving and sustaining target speed to windward.",
+      "weight": 2,
+      "children": [
+        "upwind-performance.upwind-speed.target-speed",
+        "upwind-performance.upwind-speed.speed-consistency",
+        "upwind-performance.upwind-speed.mode-switching",
+        "upwind-performance.upwind-speed.speed-testing"
+      ]
+    },
+    {
+      "id": "upwind-performance.upwind-speed.target-speed",
+      "type": "metric",
+      "name": "Target Speed",
+      "description": "Reaches known target speed for the wind strength.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.upwind-speed.speed-consistency",
+      "type": "metric",
+      "name": "Speed Consistency",
+      "description": "Maintains speed with little variation through gusts and lulls.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.upwind-speed.mode-switching",
+      "type": "metric",
+      "name": "Mode Switching",
+      "description": "Switches between high and fast modes on demand.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.upwind-speed.speed-testing",
+      "type": "metric",
+      "name": "Speed Testing",
+      "description": "Compares speed with nearby boats and acts on the results.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pointing",
+      "type": "competency",
+      "name": "Pointing",
+      "description": "Sailing at the best angle to the wind for velocity made good.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.pointing.vmg-optimisation",
+        "upwind-performance.pointing.groove-steering",
+        "upwind-performance.pointing.pinching-avoidance",
+        "upwind-performance.pointing.footing-judgement"
+      ]
+    },
+    {
+      "id": "upwind-performance.pointing.vmg-optimisation",
+      "type": "metric",
+      "name": "VMG Optimisation",
+      "description": "Balances height and speed to maximise progress to windward.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pointing.groove-steering",
+      "type": "metric",
+      "name": "Groove Steering",
+      "description": "Stays in the steering groove without luffing or stalling.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pointing.pinching-avoidance",
+      "type": "metric",
+      "name": "Pinching Avoidance",
+      "description": "Recognises and avoids sailing too high and slow.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pointing.footing-judgement",
+      "type": "metric",
+      "name": "Footing Judgement",
+      "description": "Knows when to sail lower and faster for tactical gain.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.shift-recognition",
+      "type": "competency",
+      "name": "Shift Recognition",
+      "description": "Identifying and responding to changes in wind direction.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.shift-recognition.compass-use",
+        "upwind-performance.shift-recognition.header-identification",
+        "upwind-performance.shift-recognition.shift-pattern-recognition",
+        "upwind-performance.shift-recognition.shift-anticipation"
+      ]
+    },
+    {
+      "id": "upwind-performance.shift-recognition.compass-use",
+      "type": "metric",
+      "name": "Compass Use",
+      "description": "Uses compass headings to detect lifts and headers.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.shift-recognition.header-identification",
+      "type": "metric",
+      "name": "Header Identification",
+      "description": "Identifies headers quickly and decides whether to tack.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.shift-recognition.shift-pattern-recognition",
+      "type": "metric",
+      "name": "Shift Pattern Recognition",
+      "description": "Distinguishes oscillating, persistent and geographic shift patterns.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.shift-recognition.shift-anticipation",
+      "type": "metric",
+      "name": "Shift Anticipation",
+      "description": "Reads incoming shifts from boats ahead, clouds and water patterns.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pressure-reading",
+      "type": "competency",
+      "name": "Pressure Reading",
+      "description": "Finding and using stronger wind.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.pressure-reading.gust-spotting",
+        "upwind-performance.pressure-reading.gust-timing",
+        "upwind-performance.pressure-reading.lull-avoidance",
+        "upwind-performance.pressure-reading.pressure-versus-shift-priority"
+      ]
+    },
+    {
+      "id": "upwind-performance.pressure-reading.gust-spotting",
+      "type": "metric",
+      "name": "Gust Spotting",
+      "description": "Identifies darker patches and ripples indicating pressure on the water.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pressure-reading.gust-timing",
+      "type": "metric",
+      "name": "Gust Timing",
+      "description": "Predicts when and where a gust will arrive.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pressure-reading.lull-avoidance",
+      "type": "metric",
+      "name": "Lull Avoidance",
+      "description": "Steers away from light patches and holes.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.pressure-reading.pressure-versus-shift-priority",
+      "type": "metric",
+      "name": "Pressure Versus Shift Priority",
+      "description": "Decides correctly between sailing for pressure or for a shift.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.waves-sea-state",
+      "type": "competency",
+      "name": "Waves & Sea State",
+      "description": "Adapting technique to chop and swell.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.waves-sea-state.wave-steering",
+        "upwind-performance.waves-sea-state.chop-power-settings",
+        "upwind-performance.waves-sea-state.flat-water-settings",
+        "upwind-performance.waves-sea-state.swell-angle-adaptation"
+      ]
+    },
+    {
+      "id": "upwind-performance.waves-sea-state.wave-steering",
+      "type": "metric",
+      "name": "Wave Steering",
+      "description": "Steers up the face and down the back of waves to minimise slamming.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.waves-sea-state.chop-power-settings",
+      "type": "metric",
+      "name": "Chop Power Settings",
+      "description": "Adds power and twist to drive through chop.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.waves-sea-state.flat-water-settings",
+      "type": "metric",
+      "name": "Flat Water Settings",
+      "description": "Uses flatter, higher-pointing settings in smooth water.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.waves-sea-state.swell-angle-adaptation",
+      "type": "metric",
+      "name": "Swell Angle Adaptation",
+      "description": "Adjusts technique for swell direction relative to the course.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.lane-management",
+      "type": "competency",
+      "name": "Lane Management",
+      "description": "Keeping clear air and freedom to manoeuvre.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.lane-management.clear-air-awareness",
+        "upwind-performance.lane-management.escaping-bad-air",
+        "upwind-performance.lane-management.lee-bow-positioning",
+        "upwind-performance.lane-management.lane-holding"
+      ]
+    },
+    {
+      "id": "upwind-performance.lane-management.clear-air-awareness",
+      "type": "metric",
+      "name": "Clear Air Awareness",
+      "description": "Recognises the wind shadow and disturbed air from other boats.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.lane-management.escaping-bad-air",
+      "type": "metric",
+      "name": "Escaping Bad Air",
+      "description": "Exits disturbed air quickly by tacking or footing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.lane-management.lee-bow-positioning",
+      "type": "metric",
+      "name": "Lee-Bow Positioning",
+      "description": "Positions on an opponent's lee bow to force them away.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.lane-management.lane-holding",
+      "type": "metric",
+      "name": "Lane Holding",
+      "description": "Protects a lane with speed and height.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.laylines",
+      "type": "competency",
+      "name": "Laylines",
+      "description": "Judging and approaching the layline to the windward mark.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.laylines.layline-judgement",
+        "upwind-performance.laylines.overstanding-avoidance",
+        "upwind-performance.laylines.early-layline-avoidance",
+        "upwind-performance.laylines.layline-traffic"
+      ]
+    },
+    {
+      "id": "upwind-performance.laylines.layline-judgement",
+      "type": "metric",
+      "name": "Layline Judgement",
+      "description": "Judges the layline accurately, allowing for current and leeway.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.laylines.overstanding-avoidance",
+      "type": "metric",
+      "name": "Overstanding Avoidance",
+      "description": "Avoids sailing past the layline and wasting distance.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.laylines.early-layline-avoidance",
+      "type": "metric",
+      "name": "Early Layline Avoidance",
+      "description": "Avoids committing to the layline too early from a distance.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.laylines.layline-traffic",
+      "type": "metric",
+      "name": "Layline Traffic",
+      "description": "Manages congestion and disturbed air near the layline.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.tactical-tacking",
+      "type": "competency",
+      "name": "Tactical Tacking",
+      "description": "Choosing when and where to tack.",
+      "weight": 1,
+      "children": [
+        "upwind-performance.tactical-tacking.tacking-on-headers",
+        "upwind-performance.tactical-tacking.crossing-decisions",
+        "upwind-performance.tactical-tacking.tack-economy",
+        "upwind-performance.tactical-tacking.leverage-management"
+      ]
+    },
+    {
+      "id": "upwind-performance.tactical-tacking.tacking-on-headers",
+      "type": "metric",
+      "name": "Tacking on Headers",
+      "description": "Tacks on significant headers in oscillating winds.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.tactical-tacking.crossing-decisions",
+      "type": "metric",
+      "name": "Crossing Decisions",
+      "description": "Decides correctly whether to cross, duck or tack on opponents.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.tactical-tacking.tack-economy",
+      "type": "metric",
+      "name": "Tack Economy",
+      "description": "Avoids unnecessary tacks to limit distance loss.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "upwind-performance.tactical-tacking.leverage-management",
+      "type": "metric",
+      "name": "Leverage Management",
+      "description": "Controls lateral separation from the fleet relative to risk.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance",
+      "type": "competency",
+      "name": "Downwind Performance",
+      "description": "Sailing efficiently downwind with good angles, pressure use and tactics.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.downwind-speed",
+        "downwind-performance.wave-riding",
+        "downwind-performance.downwind-pressure",
+        "downwind-performance.downwind-shifts",
+        "downwind-performance.downwind-trim",
+        "downwind-performance.downwind-tactics",
+        "downwind-performance.downwind-decisions"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-speed",
+      "type": "competency",
+      "name": "Downwind Speed",
+      "description": "Achieving the best downwind velocity made good.",
+      "weight": 2,
+      "children": [
+        "downwind-performance.downwind-speed.vmg-angle-selection",
+        "downwind-performance.downwind-speed.puff-and-lull-steering",
+        "downwind-performance.downwind-speed.apparent-wind-awareness",
+        "downwind-performance.downwind-speed.downwind-speed-consistency"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-speed.vmg-angle-selection",
+      "type": "metric",
+      "name": "VMG Angle Selection",
+      "description": "Sails the angle that maximises downwind progress for the conditions.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-speed.puff-and-lull-steering",
+      "type": "metric",
+      "name": "Puff and Lull Steering",
+      "description": "Bears away in puffs and heads up in lulls to keep speed.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-speed.apparent-wind-awareness",
+      "type": "metric",
+      "name": "Apparent Wind Awareness",
+      "description": "Understands how boat speed changes the apparent wind angle.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-speed.downwind-speed-consistency",
+      "type": "metric",
+      "name": "Downwind Speed Consistency",
+      "description": "Maintains steady speed through varying pressure.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.wave-riding",
+      "type": "competency",
+      "name": "Wave Riding",
+      "description": "Using waves to gain speed downwind.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.wave-riding.wave-catching",
+        "downwind-performance.wave-riding.wave-linking",
+        "downwind-performance.wave-riding.weight-movement-on-waves",
+        "downwind-performance.wave-riding.trough-avoidance"
+      ]
+    },
+    {
+      "id": "downwind-performance.wave-riding.wave-catching",
+      "type": "metric",
+      "name": "Wave Catching",
+      "description": "Uses steering and permitted body movement to catch waves.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.wave-riding.wave-linking",
+      "type": "metric",
+      "name": "Wave Linking",
+      "description": "Connects waves to extend surfing runs.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.wave-riding.weight-movement-on-waves",
+      "type": "metric",
+      "name": "Weight Movement on Waves",
+      "description": "Moves weight fore and aft to promote surfing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.wave-riding.trough-avoidance",
+      "type": "metric",
+      "name": "Trough Avoidance",
+      "description": "Steers to avoid burying the bow into the back of the wave ahead.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-pressure",
+      "type": "competency",
+      "name": "Downwind Pressure",
+      "description": "Finding and connecting pressure downwind.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.downwind-pressure.looking-behind",
+        "downwind-performance.downwind-pressure.gust-connection",
+        "downwind-performance.downwind-pressure.gybing-into-pressure",
+        "downwind-performance.downwind-pressure.hole-avoidance"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-pressure.looking-behind",
+      "type": "metric",
+      "name": "Looking Behind",
+      "description": "Regularly checks upwind for incoming pressure.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-pressure.gust-connection",
+      "type": "metric",
+      "name": "Gust Connection",
+      "description": "Positions to connect from one gust to the next.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-pressure.gybing-into-pressure",
+      "type": "metric",
+      "name": "Gybing into Pressure",
+      "description": "Gybes to stay in or reach stronger wind.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-pressure.hole-avoidance",
+      "type": "metric",
+      "name": "Hole Avoidance",
+      "description": "Avoids light areas and wind shadow from boats and land.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-shifts",
+      "type": "competency",
+      "name": "Downwind Shifts",
+      "description": "Using wind direction changes downwind.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.downwind-shifts.downwind-shift-detection",
+        "downwind-performance.downwind-shifts.gybing-on-lifts",
+        "downwind-performance.downwind-shifts.oscillation-timing",
+        "downwind-performance.downwind-shifts.persistent-shift-response"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-shifts.downwind-shift-detection",
+      "type": "metric",
+      "name": "Downwind Shift Detection",
+      "description": "Detects shifts downwind using compass and apparent wind.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-shifts.gybing-on-lifts",
+      "type": "metric",
+      "name": "Gybing on Lifts",
+      "description": "Gybes when lifted downwind to sail the gybe pointing closer to the mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-shifts.oscillation-timing",
+      "type": "metric",
+      "name": "Oscillation Timing",
+      "description": "Times gybes to match oscillating shifts.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-shifts.persistent-shift-response",
+      "type": "metric",
+      "name": "Persistent Shift Response",
+      "description": "Sails toward a persistent shift early on the run.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-trim",
+      "type": "competency",
+      "name": "Downwind Trim",
+      "description": "Trimming and balancing the boat for downwind speed.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.downwind-trim.sheet-ease-cycle",
+        "downwind-performance.downwind-trim.downwind-twist-control",
+        "downwind-performance.downwind-trim.downwind-heel-control",
+        "downwind-performance.downwind-trim.stability-in-breeze"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-trim.sheet-ease-cycle",
+      "type": "metric",
+      "name": "Sheet Ease Cycle",
+      "description": "Eases sheets to the edge of luffing and re-trims as the wind changes.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-trim.downwind-twist-control",
+      "type": "metric",
+      "name": "Downwind Twist Control",
+      "description": "Uses vang or kicker tension to manage leech twist.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-trim.downwind-heel-control",
+      "type": "metric",
+      "name": "Downwind Heel Control",
+      "description": "Uses heel to balance the helm and steer with minimal rudder.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-trim.stability-in-breeze",
+      "type": "metric",
+      "name": "Stability in Breeze",
+      "description": "Maintains roll stability in strong downwind conditions.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-tactics",
+      "type": "competency",
+      "name": "Downwind Tactics",
+      "description": "Attacking and defending downwind.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.downwind-tactics.wind-shadow-attack",
+        "downwind-performance.downwind-tactics.wind-shadow-defence",
+        "downwind-performance.downwind-tactics.passing-lanes",
+        "downwind-performance.downwind-tactics.inside-position-setup"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-tactics.wind-shadow-attack",
+      "type": "metric",
+      "name": "Wind Shadow Attack",
+      "description": "Uses wind shadow to slow boats ahead.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-tactics.wind-shadow-defence",
+      "type": "metric",
+      "name": "Wind Shadow Defence",
+      "description": "Avoids being blanketed by boats behind.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-tactics.passing-lanes",
+      "type": "metric",
+      "name": "Passing Lanes",
+      "description": "Identifies and uses passing lanes on the run.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-tactics.inside-position-setup",
+      "type": "metric",
+      "name": "Inside Position Setup",
+      "description": "Sets up the inside position for the next mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-decisions",
+      "type": "competency",
+      "name": "Downwind Decisions",
+      "description": "Planning gybes and the approach on the run.",
+      "weight": 1,
+      "children": [
+        "downwind-performance.downwind-decisions.downwind-laylines",
+        "downwind-performance.downwind-decisions.gybe-economy",
+        "downwind-performance.downwind-decisions.side-selection-downwind",
+        "downwind-performance.downwind-decisions.fleet-positioning-downwind"
+      ]
+    },
+    {
+      "id": "downwind-performance.downwind-decisions.downwind-laylines",
+      "type": "metric",
+      "name": "Downwind Laylines",
+      "description": "Judges downwind laylines to avoid extra gybes or over-sailing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-decisions.gybe-economy",
+      "type": "metric",
+      "name": "Gybe Economy",
+      "description": "Avoids unnecessary gybes.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-decisions.side-selection-downwind",
+      "type": "metric",
+      "name": "Side Selection Downwind",
+      "description": "Chooses the favoured side of the run based on pressure and current.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "downwind-performance.downwind-decisions.fleet-positioning-downwind",
+      "type": "metric",
+      "name": "Fleet Positioning Downwind",
+      "description": "Balances strategy against fleet position on the run.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings",
+      "type": "competency",
+      "name": "Mark Roundings",
+      "description": "Approaching, rounding and exiting marks efficiently and legally.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.windward-mark-approach",
+        "mark-roundings.windward-mark-rounding",
+        "mark-roundings.leeward-mark-approach",
+        "mark-roundings.leeward-mark-rounding",
+        "mark-roundings.gate-selection",
+        "mark-roundings.reach-offset-marks",
+        "mark-roundings.mark-room-rules"
+      ]
+    },
+    {
+      "id": "mark-roundings.windward-mark-approach",
+      "type": "competency",
+      "name": "Windward Mark Approach",
+      "description": "Arriving at the windward mark with speed, clear air and options.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.windward-mark-approach.starboard-layline-approach",
+        "mark-roundings.windward-mark-approach.port-approach-judgement",
+        "mark-roundings.windward-mark-approach.zone-entry",
+        "mark-roundings.windward-mark-approach.traffic-anticipation"
+      ]
+    },
+    {
+      "id": "mark-roundings.windward-mark-approach.starboard-layline-approach",
+      "type": "metric",
+      "name": "Starboard Layline Approach",
+      "description": "Approaches on the starboard layline with clear air.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-approach.port-approach-judgement",
+      "type": "metric",
+      "name": "Port Approach Judgement",
+      "description": "Judges when a port-tack approach is viable and safe.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-approach.zone-entry",
+      "type": "metric",
+      "name": "Zone Entry",
+      "description": "Enters the three-length zone in a favourable position.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-approach.traffic-anticipation",
+      "type": "metric",
+      "name": "Traffic Anticipation",
+      "description": "Anticipates congestion and plans the approach accordingly.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-rounding",
+      "type": "competency",
+      "name": "Windward Mark Rounding",
+      "description": "Turning downwind at the windward mark without losing distance.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.windward-mark-rounding.bear-away-smoothness",
+        "mark-roundings.windward-mark-rounding.trim-through-rounding",
+        "mark-roundings.windward-mark-rounding.windward-exit-angle",
+        "mark-roundings.windward-mark-rounding.post-rounding-lane"
+      ]
+    },
+    {
+      "id": "mark-roundings.windward-mark-rounding.bear-away-smoothness",
+      "type": "metric",
+      "name": "Bear-Away Smoothness",
+      "description": "Bears away smoothly while easing sails in coordination.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-rounding.trim-through-rounding",
+      "type": "metric",
+      "name": "Trim Through Rounding",
+      "description": "Adjusts sail controls through the rounding for the new leg.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-rounding.windward-exit-angle",
+      "type": "metric",
+      "name": "Windward Exit Angle",
+      "description": "Exits the mark on the planned course for the next leg.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.windward-mark-rounding.post-rounding-lane",
+      "type": "metric",
+      "name": "Post-Rounding Lane",
+      "description": "Secures clear air immediately after rounding.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-approach",
+      "type": "competency",
+      "name": "Leeward Mark Approach",
+      "description": "Setting up for an efficient leeward mark rounding.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.leeward-mark-approach.overlap-establishment",
+        "mark-roundings.leeward-mark-approach.wide-entry-setup",
+        "mark-roundings.leeward-mark-approach.early-preparation",
+        "mark-roundings.leeward-mark-approach.approach-speed-control"
+      ]
+    },
+    {
+      "id": "mark-roundings.leeward-mark-approach.overlap-establishment",
+      "type": "metric",
+      "name": "Overlap Establishment",
+      "description": "Establishes an inside overlap before the zone when possible.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-approach.wide-entry-setup",
+      "type": "metric",
+      "name": "Wide Entry Setup",
+      "description": "Sets up for a wide entry and a tight exit.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-approach.early-preparation",
+      "type": "metric",
+      "name": "Early Preparation",
+      "description": "Completes preparation for the upwind leg before the mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-approach.approach-speed-control",
+      "type": "metric",
+      "name": "Approach Speed Control",
+      "description": "Manages speed to arrive with control and options.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-rounding",
+      "type": "competency",
+      "name": "Leeward Mark Rounding",
+      "description": "Turning upwind at the leeward mark and exiting high and fast.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.leeward-mark-rounding.tight-exit",
+        "mark-roundings.leeward-mark-rounding.upwind-trim-transition",
+        "mark-roundings.leeward-mark-rounding.close-hauled-exit-heading",
+        "mark-roundings.leeward-mark-rounding.pinned-avoidance"
+      ]
+    },
+    {
+      "id": "mark-roundings.leeward-mark-rounding.tight-exit",
+      "type": "metric",
+      "name": "Tight Exit",
+      "description": "Exits close to the mark without giving away height.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-rounding.upwind-trim-transition",
+      "type": "metric",
+      "name": "Upwind Trim Transition",
+      "description": "Trims to upwind settings during the rounding.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-rounding.close-hauled-exit-heading",
+      "type": "metric",
+      "name": "Close-Hauled Exit Heading",
+      "description": "Reaches a close-hauled heading immediately after the mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.leeward-mark-rounding.pinned-avoidance",
+      "type": "metric",
+      "name": "Pinned Avoidance",
+      "description": "Avoids being pinned by boats exiting ahead or to windward.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.gate-selection",
+      "type": "competency",
+      "name": "Gate Selection",
+      "description": "Choosing between gate marks.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.gate-selection.favoured-gate-choice",
+        "mark-roundings.gate-selection.gate-traffic-assessment",
+        "mark-roundings.gate-selection.gate-strategy-link",
+        "mark-roundings.gate-selection.late-gate-change"
+      ]
+    },
+    {
+      "id": "mark-roundings.gate-selection.favoured-gate-choice",
+      "type": "metric",
+      "name": "Favoured Gate Choice",
+      "description": "Selects the gate mark that best suits the next leg.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.gate-selection.gate-traffic-assessment",
+      "type": "metric",
+      "name": "Gate Traffic Assessment",
+      "description": "Assesses congestion at each gate mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.gate-selection.gate-strategy-link",
+      "type": "metric",
+      "name": "Gate Strategy Link",
+      "description": "Links gate choice to the preferred side of the next beat.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.gate-selection.late-gate-change",
+      "type": "metric",
+      "name": "Late Gate Change",
+      "description": "Changes gate choice late when conditions justify it.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.reach-offset-marks",
+      "type": "competency",
+      "name": "Reach & Offset Marks",
+      "description": "Handling offset marks and reaching legs.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.reach-offset-marks.offset-mark-handling",
+        "mark-roundings.reach-offset-marks.reach-mark-rounding",
+        "mark-roundings.reach-offset-marks.reach-leg-positioning",
+        "mark-roundings.reach-offset-marks.reach-speed"
+      ]
+    },
+    {
+      "id": "mark-roundings.reach-offset-marks.offset-mark-handling",
+      "type": "metric",
+      "name": "Offset Mark Handling",
+      "description": "Rounds offset marks without losing position.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.reach-offset-marks.reach-mark-rounding",
+      "type": "metric",
+      "name": "Reach Mark Rounding",
+      "description": "Executes gybe or bear-away roundings at reach marks.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.reach-offset-marks.reach-leg-positioning",
+      "type": "metric",
+      "name": "Reach Leg Positioning",
+      "description": "Chooses high or low lanes on reaching legs.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.reach-offset-marks.reach-speed",
+      "type": "metric",
+      "name": "Reach Speed",
+      "description": "Maintains speed on reaching legs with balanced trim.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.mark-room-rules",
+      "type": "competency",
+      "name": "Mark-Room Rules",
+      "description": "Applying the rules at marks.",
+      "weight": 1,
+      "children": [
+        "mark-roundings.mark-room-rules.zone-rule-application",
+        "mark-roundings.mark-room-rules.mark-room-entitlement",
+        "mark-roundings.mark-room-rules.overlap-determination",
+        "mark-roundings.mark-room-rules.touching-mark-penalties"
+      ]
+    },
+    {
+      "id": "mark-roundings.mark-room-rules.zone-rule-application",
+      "type": "metric",
+      "name": "Zone Rule Application",
+      "description": "Applies the rules that begin at the three-length zone.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.mark-room-rules.mark-room-entitlement",
+      "type": "metric",
+      "name": "Mark-Room Entitlement",
+      "description": "Knows when mark-room is owed and to whom.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.mark-room-rules.overlap-determination",
+      "type": "metric",
+      "name": "Overlap Determination",
+      "description": "Determines overlap status correctly at zone entry.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "mark-roundings.mark-room-rules.touching-mark-penalties",
+      "type": "metric",
+      "name": "Touching Mark Penalties",
+      "description": "Takes the correct penalty after touching a mark.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy",
+      "type": "competency",
+      "name": "Racing Strategy",
+      "description": "Planning and adapting the race using wind, current, geography, the fleet and the rules.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.weather-strategy",
+        "racing-strategy.current-tide",
+        "racing-strategy.geographic-effects",
+        "racing-strategy.fleet-management",
+        "racing-strategy.boat-on-boat-tactics",
+        "racing-strategy.racing-rules",
+        "racing-strategy.mental-performance",
+        "racing-strategy.finishing"
+      ]
+    },
+    {
+      "id": "racing-strategy.weather-strategy",
+      "type": "competency",
+      "name": "Weather Strategy",
+      "description": "Using weather knowledge to plan the race.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.weather-strategy.forecast-interpretation",
+        "racing-strategy.weather-strategy.sea-breeze-understanding",
+        "racing-strategy.weather-strategy.gradient-wind-patterns",
+        "racing-strategy.weather-strategy.cloud-effects"
+      ]
+    },
+    {
+      "id": "racing-strategy.weather-strategy.forecast-interpretation",
+      "type": "metric",
+      "name": "Forecast Interpretation",
+      "description": "Interprets forecasts to anticipate wind trends during racing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.weather-strategy.sea-breeze-understanding",
+      "type": "metric",
+      "name": "Sea Breeze Understanding",
+      "description": "Recognises sea breeze development and its effects.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.weather-strategy.gradient-wind-patterns",
+      "type": "metric",
+      "name": "Gradient Wind Patterns",
+      "description": "Understands gradient wind behaviour and its shifts.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.weather-strategy.cloud-effects",
+      "type": "metric",
+      "name": "Cloud Effects",
+      "description": "Anticipates wind changes under and around clouds.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.current-tide",
+      "type": "competency",
+      "name": "Current & Tide",
+      "description": "Using water movement to advantage.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.current-tide.current-reading",
+        "racing-strategy.current-tide.current-strategy",
+        "racing-strategy.current-tide.current-at-marks",
+        "racing-strategy.current-tide.current-at-the-line"
+      ]
+    },
+    {
+      "id": "racing-strategy.current-tide.current-reading",
+      "type": "metric",
+      "name": "Current Reading",
+      "description": "Measures current strength and direction on the course.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.current-tide.current-strategy",
+      "type": "metric",
+      "name": "Current Strategy",
+      "description": "Uses favourable current and avoids adverse current.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.current-tide.current-at-marks",
+      "type": "metric",
+      "name": "Current at Marks",
+      "description": "Adjusts mark approaches for current set.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.current-tide.current-at-the-line",
+      "type": "metric",
+      "name": "Current at the Line",
+      "description": "Accounts for current when starting and finishing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.geographic-effects",
+      "type": "competency",
+      "name": "Geographic Effects",
+      "description": "Understanding how land shapes the wind.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.geographic-effects.shore-effects",
+        "racing-strategy.geographic-effects.wind-shadow-from-land",
+        "racing-strategy.geographic-effects.channelling",
+        "racing-strategy.geographic-effects.thermal-influences"
+      ]
+    },
+    {
+      "id": "racing-strategy.geographic-effects.shore-effects",
+      "type": "metric",
+      "name": "Shore Effects",
+      "description": "Understands wind bends and acceleration near shorelines.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.geographic-effects.wind-shadow-from-land",
+      "type": "metric",
+      "name": "Wind Shadow from Land",
+      "description": "Avoids wind shadow from headlands, buildings and trees.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.geographic-effects.channelling",
+      "type": "metric",
+      "name": "Channelling",
+      "description": "Recognises wind channelling through valleys and gaps.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.geographic-effects.thermal-influences",
+      "type": "metric",
+      "name": "Thermal Influences",
+      "description": "Accounts for local thermal effects on wind direction and strength.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.fleet-management",
+      "type": "competency",
+      "name": "Fleet Management",
+      "description": "Managing position and risk relative to the fleet.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.fleet-management.fleet-positioning",
+        "racing-strategy.fleet-management.risk-management",
+        "racing-strategy.fleet-management.consolidation",
+        "racing-strategy.fleet-management.recovery-from-behind"
+      ]
+    },
+    {
+      "id": "racing-strategy.fleet-management.fleet-positioning",
+      "type": "metric",
+      "name": "Fleet Positioning",
+      "description": "Maintains a sound position relative to the fleet.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.fleet-management.risk-management",
+      "type": "metric",
+      "name": "Risk Management",
+      "description": "Adjusts risk according to race position and series standing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.fleet-management.consolidation",
+      "type": "metric",
+      "name": "Consolidation",
+      "description": "Consolidates gains by moving toward the fleet.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.fleet-management.recovery-from-behind",
+      "type": "metric",
+      "name": "Recovery from Behind",
+      "description": "Takes calculated risks to gain from a poor position.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.boat-on-boat-tactics",
+      "type": "competency",
+      "name": "Boat-on-Boat Tactics",
+      "description": "Controlling and escaping individual opponents.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.boat-on-boat-tactics.tight-cover",
+        "racing-strategy.boat-on-boat-tactics.loose-cover",
+        "racing-strategy.boat-on-boat-tactics.breaking-cover",
+        "racing-strategy.boat-on-boat-tactics.controlling-opponents"
+      ]
+    },
+    {
+      "id": "racing-strategy.boat-on-boat-tactics.tight-cover",
+      "type": "metric",
+      "name": "Tight Cover",
+      "description": "Applies a tight cover to control a specific opponent.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.boat-on-boat-tactics.loose-cover",
+      "type": "metric",
+      "name": "Loose Cover",
+      "description": "Stays between an opponent and the next mark without engaging.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.boat-on-boat-tactics.breaking-cover",
+      "type": "metric",
+      "name": "Breaking Cover",
+      "description": "Escapes a cover using tacks, speed or fakes.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.boat-on-boat-tactics.controlling-opponents",
+      "type": "metric",
+      "name": "Controlling Opponents",
+      "description": "Forces opponents into unfavourable positions.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.racing-rules",
+      "type": "competency",
+      "name": "Racing Rules",
+      "description": "Knowing and applying the racing rules.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.racing-rules.right-of-way-rules",
+        "racing-strategy.racing-rules.limitations-on-right-of-way",
+        "racing-strategy.racing-rules.penalty-turns",
+        "racing-strategy.racing-rules.protest-process"
+      ]
+    },
+    {
+      "id": "racing-strategy.racing-rules.right-of-way-rules",
+      "type": "metric",
+      "name": "Right-of-Way Rules",
+      "description": "Applies port/starboard, windward/leeward and clear ahead/astern rules.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.racing-rules.limitations-on-right-of-way",
+      "type": "metric",
+      "name": "Limitations on Right of Way",
+      "description": "Applies the rules on acquiring right of way and changing course.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.racing-rules.penalty-turns",
+      "type": "metric",
+      "name": "Penalty Turns",
+      "description": "Takes penalties correctly and promptly.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.racing-rules.protest-process",
+      "type": "metric",
+      "name": "Protest Process",
+      "description": "Understands hailing, flagging and protest hearing procedures.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.mental-performance",
+      "type": "competency",
+      "name": "Mental Performance",
+      "description": "Preparing for and staying composed while racing.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.mental-performance.pre-race-routine",
+        "racing-strategy.mental-performance.focus-under-pressure",
+        "racing-strategy.mental-performance.error-recovery",
+        "racing-strategy.mental-performance.post-race-debrief"
+      ]
+    },
+    {
+      "id": "racing-strategy.mental-performance.pre-race-routine",
+      "type": "metric",
+      "name": "Pre-Race Routine",
+      "description": "Follows a consistent preparation routine before racing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.mental-performance.focus-under-pressure",
+      "type": "metric",
+      "name": "Focus Under Pressure",
+      "description": "Maintains concentration in close racing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.mental-performance.error-recovery",
+      "type": "metric",
+      "name": "Error Recovery",
+      "description": "Recovers quickly from mistakes without compounding them.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.mental-performance.post-race-debrief",
+      "type": "metric",
+      "name": "Post-Race Debrief",
+      "description": "Reviews performance and identifies lessons after racing.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.finishing",
+      "type": "competency",
+      "name": "Finishing",
+      "description": "Gaining and protecting places at the finish.",
+      "weight": 1,
+      "children": [
+        "racing-strategy.finishing.favoured-finish-end",
+        "racing-strategy.finishing.final-leg-tactics",
+        "racing-strategy.finishing.finish-line-approach",
+        "racing-strategy.finishing.shooting-the-line"
+      ]
+    },
+    {
+      "id": "racing-strategy.finishing.favoured-finish-end",
+      "type": "metric",
+      "name": "Favoured Finish End",
+      "description": "Identifies the favoured end of the finish line.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.finishing.final-leg-tactics",
+      "type": "metric",
+      "name": "Final Leg Tactics",
+      "description": "Protects or gains positions on the final leg.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.finishing.finish-line-approach",
+      "type": "metric",
+      "name": "Finish Line Approach",
+      "description": "Approaches the line on the best tack or gybe.",
+      "weight": 1,
+      "children": []
+    },
+    {
+      "id": "racing-strategy.finishing.shooting-the-line",
+      "type": "metric",
+      "name": "Shooting the Line",
+      "description": "Uses momentum to cross the finish line at the optimal moment.",
+      "weight": 1,
+      "children": []
+    }
+  ]
+}

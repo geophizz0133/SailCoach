@@ -1,0 +1,4 @@
+# macOS metadata (incl. AppleDouble files on external drives)
+.DS_Store
+._*
+.claude/
